@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --mnbg: rgb(24, 24, 24);
+    --mnclr: white;
+    color: var(--mnclr);
+    font-family: "Saira Semi Condensed", sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.cont {
+    height: 100vw;
+    width: 100vw;
+    background: rgb(4, 0, 52);
+    background: linear-gradient(177deg, rgba(4, 0, 52, 1) 10%, rgba(73, 73, 73, 1) 100%);
+}
+
+.userInfo {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+#mainNm {
+    font-size: 50px;
+    color: aqua;
+
+}
+
+.mainshortcutDivcont {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainShortcuts {
+    border-radius: 9px;
+    /* padding: 4px; */
+    border: 1px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    background-color: rgb(14, 14, 14);
+}
+
+.mnshortcutBx {
+    margin: 8px;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mnshortcutBxIm {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+.mnshortcutBxIm img {
+    height: 100%;
+    border-radius: 9px;
+    margin-bottom: 5px;
+}
+
+.mnshortcutBxIm:hover {
+    box-shadow: 0 0 10px aqua;
+}
+
+.ClockBx {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+.ClockBx h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-size: 60px;
+}
+
+.ClockBx h2:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-size: 20px;
+}
+
+#mrappscont {
+    height: 400px;
+    width: 540px;
+    /* border: 1px solid white; */
+    position: absolute;
+    bottom: 100px;
+    right: 250px;
+    border-radius: 9px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+#mrappscontBx {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#mrappscontBx a {
+    text-decoration: none;
+    height: fit-content;
+}
+
+.mrappsbx {
+    height: 60px;
+    width: 50px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 9px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mrappsimg {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mrappsimg img {
+    height: 100%;
+    border-radius: 9px;
+}
+
+.mrappsbx p {
+    text-align: center;
+}
+
+#addEditeform,
+#EditFomts {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    z-index: 1000;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+.addEditforms {
+    border: 1px solid white;
+    width: 400px;
+    border-radius: 9px;
+    padding: 10px;
+    background-color: black;
+}
+
+.addEditforms_top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.addEditforms_top i {
+    font-size: 24px;
+}
+
+.addEditforms_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.addEditforms_body>* {
+    width: 300px;
+    height: 30px;
+    margin: 6px 0;
+    background-color: var(--mnbg);
+    border-radius: 9px;
+}
+
+.addEditforms_body>button {
+    border: none;
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+}
+
+.addEditforms_body>input {
+    border: 1px solid white;
+    padding: 0 10px;
+}
+
+#appListcont {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    z-index: 1000;
+    top: 0;
+    align-items: start;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.856);
+    overflow-y: scroll;
+}
+
+#appListcont_nc {
+    height: auto;
+    width: 90%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 90px;
+    gap: 15px;
+}
+
+#appListcont_nc>i {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.appListcont_rw {
+    height: 60px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 10px;
+    position: relative;
+}
+
+.appListcont_icons {
+    height: 100%;
+}
+
+.appListcont_icons img {
+    height: 100%;
+}
+
+.appListcont_actionbtns {
+    position: absolute;
+    right: 10px;
+}
+
+.appListcont_actionbtns button {
+    width: 50px;
+    height: 30px;
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 9px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.appListcont_actionbtns button:nth-child(2) i {
+    color: red;
+}
+
+.infoCont {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid white;
+    height: 20px;
+    width: 20px;
+    border-radius: 9px;
+}
+.infDiv{
+    overflow: scroll;
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    bottom: 200px;
+    right: 200px;
+    border-radius: 9px;
+    background-color: rgba(27, 27, 27, 0.671);
+    cursor: text;
+    padding: 10px;
+}
+.infDiv p{
+    padding: 5px;
+}
+.infoCont:hover > .infDiv{
+    display: flex;
+}

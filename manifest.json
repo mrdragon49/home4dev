@@ -1,0 +1,12 @@
+{
+    "name": "Home4Dev",
+    "version": "1.1",
+    "description": "a browser home page for developers. in this home page developer can add usefull links and many more",
+    "manifest_version": 3,
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "icons": {
+        "2": "mainlogo.png"
+    }
+}
