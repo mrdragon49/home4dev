@@ -122,7 +122,7 @@ const dateDayfun = () => {
     }
     let daysn = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let datefomt = {
-        dn: daysn[dayn] + "day",
+        dn: daysn[dayn],
         dd: dd + "/" + dm + "/" + dy
     };
     return datefomt;
